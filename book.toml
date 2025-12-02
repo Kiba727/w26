@@ -1,0 +1,8 @@
+[book]
+title = "COMP 4630 | Winter 2026"
+authors = ["Charlotte Curtis"]
+description = "Machine Learning for CS at MRU"
+src = "."
+
+[preprocessor.katex]
+after = ["links"]
