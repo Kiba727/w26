@@ -4,5 +4,10 @@ authors = ["Charlotte Curtis"]
 description = "Machine Learning for CS at MRU"
 src = "."
 
+# Use katex for math instead of broken mathjax
 [preprocessor.katex]
 after = ["links"]
+
+# strip yaml front matter (from marp md)
+[preprocessor.marp]
+command = "cargo run --manifest-path=crates/mdbook-marp/Cargo.toml --locked"
