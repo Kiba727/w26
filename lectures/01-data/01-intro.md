@@ -62,15 +62,16 @@ Bonus marks may be awarded for *substantial* corrections to materials, submitted
 
 </div>
 
-**Course materials repo**: https://github.com/mru-comp4630/w25
+**Course materials repo**: https://github.com/mru-comp4630/w26
 
 ---
 
 ## Textbooks and other readings
 
 Primary Textbook:
-- [Hands on Machine Learning with Scikit-Learn and Tensorflow](https://ebookcentral.proquest.com/lib/mtroyal-ebooks/detail.action?docID=30168989)
-- [Associated GitHub repo](https://github.com/ageron/handson-ml3)
+- [Hands on Machine Learning with Scikit-Learn and [Tensorflow/PyTorch]](https://ebookcentral.proquest.com/lib/mtroyal-ebooks/detail.action?docID=30168989)
+- [Associated GitHub repo (Tensorflow)](https://github.com/ageron/handson-ml3)
+- [Associated GitHub repo (Tensorflow)](https://github.com/ageron/handson-mlp)
 
 More mathy details:
 - [Deep Learning](https://www.deeplearningbook.org/)
