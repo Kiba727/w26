@@ -72,9 +72,9 @@ fn link_event<'a>(events: &mut Vec<Event<'a>>, text: &'a str, url: &'a str) {
     }));
     
     let img_ref = if text.contains("PDF") {
-        Some("../figures/file-type-pdf.svg")
+        Some("/lectures/figures/file-type-pdf.svg")
     } else if text.contains("HTML") {
-        Some("../figures/osc-presenter.svg")
+        Some("/lectures/figures/osc-presenter.svg")
     } else {
         None
     };
@@ -98,8 +98,8 @@ fn process_marp_header(content: &String, title: &str, filename: &str) -> Result<
     let mut events = vec![];
     let mut in_header = false;
 
-    let slide_target = format!("../slides/{}.html", &filename);
-    let pdf_target = format!("../pdfs/{}.pdf", &filename);
+    let slide_target = format!("/lectures/slides/{}.html", &filename);
+    let pdf_target = format!("/lectures/pdfs/{}.pdf", &filename);
 
     for event in Parser::new_ext(&content, Options::all()) {
         match &event {
@@ -121,6 +121,15 @@ fn process_marp_header(content: &String, title: &str, filename: &str) -> Result<
                 link_event(&mut events, "HTML Slides", &slide_target);
                 events.push(Event::Text(" | ".into()));
                 link_event(&mut events, "PDF Slides", &pdf_target);
+            }
+            Event::Start(Tag::Image { link_type, dest_url, title, id }) => {
+                let new_url = dest_url.clone().into_string().replace("../", "/lectures/");
+                events.push(Event::Start(Tag::Image {
+                    link_type: *link_type,
+                    dest_url: new_url.into(),
+                    title: title.clone(),
+                    id: id.clone(),
+                }));
             }
             _ if !in_header => events.push(event),
             _ => {}

@@ -77,7 +77,7 @@ More mathy details:
 - [Deep Learning](https://www.deeplearningbook.org/)
 
 Journal club list:
-- [MRU Library Reading List](https://mtroyal.alma.exlibrisgroup.com/leganto/nui/lists/8275610160004656)
+- [Journal Club Readings](/assignments/journal_club/README.md)
 
 ---
 
