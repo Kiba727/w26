@@ -13,22 +13,17 @@ _paginate: skip
 
 ## Welcome to Machine Learning!
 
-COMP 4630 | Winter 2025
+COMP 4630 | Winter 2026
 Charlotte Curtis
 
 ---
 
 ## What is this course about?
-* Continuing the supervised/unsupervised learning algorithms from COMP 3652, with a focus on **Neural Networks**
-* First half: the history, theory, and math behind neural networks
-* Second half: applications of NNs in computer vision, natural language processing, and more
-
-
-<div data-marpit-fragment>
+- Continuing the supervised/unsupervised learning algorithms from COMP 3652, with a focus on **Neural Networks**
+- First half: the history, theory, and math behind neural networks
+- Second half: applications of NNs in computer vision, natural language processing, and more
 
 > This is not (just) a course on building models using libraries like TensorFlow or PyTorch, it is a course on understanding the theory
-
-</div>
 
 ---
 
@@ -81,6 +76,18 @@ Journal club list:
 
 ---
 
+## Generative AI policy
+
+<!-- 
+_class: code_reminder
+-->
+
+- Yes, AI can do a lot of what I'm asking for in this course
+- No, I do not want to read about what AI "thinks"
+- :question: What do you think is an appropriate use?
+
+---
+
 ## Machine Learning Project Checklist
 
 <div style="font-size: 0.9em;">
@@ -103,6 +110,10 @@ Journal club list:
 ---
 
 ## 1. Look at the big picture
+
+<!-- 
+_class: code_reminder
+-->
 
 Example Dataset: California housing prices (1990)
 
@@ -170,10 +181,10 @@ Suppose we **randomly** sample 100 people. What is the probability of fewer than
 
 ## 3. Explore the data
 ❓ Discussion questions: 
-* What do you notice about the data?
-* Do the values make sense for the labels?
-* Is the scale of the features comparable? Does this matter?
-* What possible biases might be present in the data?
+- What do you notice about the data?
+- Do the values make sense for the labels?
+- Is the scale of the features comparable? Does this matter?
+- What possible biases might be present in the data?
 
 ---
 
