@@ -31,6 +31,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: true
+          fetch-depth: 0
+      
+      # fix timestamps so slide processing works
+      - name: git-restore-mtime
+        uses: chetan/git-restore-mtime-action@v2.2
 
       - name: Process slides
         run: |
@@ -47,6 +52,7 @@ jobs:
             git add lectures
             git commit -m "Slides build action"
             git push
+        continue-on-error: true # "error" if no changes
 
       - name: Install mdBook
         run: |
