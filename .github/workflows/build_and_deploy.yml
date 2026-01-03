@@ -38,11 +38,13 @@ jobs:
         uses: chetan/git-restore-mtime-action@v2.2
 
       - name: Process slides
+        id: process-slides
         run: |
             chmod +x .github/process_slides.sh
             .github/process_slides.sh
     
       - name: Publish to repo
+        if: steps.process-slides.outputs.slides_updated == '1'
             # Source - https://stackoverflow.com/questions/69839851/github-actions-copy-git-user-name-and-user-email-from-last-commit
             # Posted by SANTHOSH.SJ, modified by community. See post 'Timeline' for change history
             # Retrieved 2025-12-09, License - CC BY-SA 4.0
