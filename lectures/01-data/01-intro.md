@@ -131,7 +131,7 @@ _class: invert lead
 _paginate: skip
  -->
 
-## Where we left off - Monday, January 12
+## Where we left off on Wednesday, January 7
 
 First, some stuff about assessments
 - [Assignment 1](https://mru-comp4630.github.io/w26/assignments/assignment1)
@@ -214,6 +214,15 @@ where $\bar{x}$ and $\bar{y}$ are the sample means of $X$ and $Y$, respectively.
 
 - What do correlations of 0, 1, and -1 mean?
 - What are some limitations of Pearson correlation?
+
+---
+
+<!-- 
+_class: invert lead
+_paginate: skip
+ -->
+
+## Where we left off on Monday, January 12
 
 ---
 
