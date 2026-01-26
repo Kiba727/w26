@@ -136,12 +136,12 @@ Image source: Scikit-learn book
 ---
 
 ## Training MLPs with backpropagation
-1) Initialize the weights, through some random-ish strategy
-2) Perform a **forward pass** to compute the output of each neuron
-3) Compute the **loss** of the output layer (e.g. MSE)
-4) Calculate the **gradient of the loss** with respect to each weight
-5) Update the weights using gradient descent (minibatch, stochastic, etc)
-6) Repeat steps 2-5 until stopping criteria met
+1. Initialize the weights, through some random-ish strategy
+2. Perform a **forward pass** to compute the output of each neuron
+3. Compute the **loss** of the output layer (e.g. MSE)
+4. Calculate the **gradient of the loss** with respect to each weight
+5. Update the weights using gradient descent (minibatch, stochastic, etc)
+6. Repeat steps 2-5 until stopping criteria met
 
     > Step 4 is the "backpropagation" part
 
@@ -165,7 +165,7 @@ Image source: Scikit-learn book
 
 <div style="text-align: center">
 
-$$\mathbf{x} = \begin{bmatrix}2 & 3\end{bmatrix},\hspace{1em} y = 1$$
+$$\mathbf{X} = \begin{bmatrix}2 & 3\end{bmatrix},\hspace{1em} y = 1$$
 
 and
 
@@ -273,7 +273,6 @@ _paginate: skip
     $$\sigma(z) = \frac{1}{1 + e^{-z}}, \hspace{0.5cm} \frac{d\sigma}{dz} = \sigma(z)(1 - \sigma(z))$$
 - A more computationally efficient choice common today is the "ReLU" (Rectified Linear Unit) function:
     $$\text{ReLU}(z) = \max(0, z), \hspace{0.5cm} \frac{d\text{ReLU}}{dz} = \begin{cases} 0 & z < 0 \\ 1 & z > 0 \end{cases}$$
-- What about $z = 0$? Most implementations just set it to 0
 
 <!-- Draw the functions and derivatives on the board -->
 
