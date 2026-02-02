@@ -8,6 +8,7 @@
 - [3. Training models](lectures/03-training-models/03-training-models.md)
 - [4. Backpropagation](lectures/04-backpropagation/04-backprop.md)
 - [5. Classification](lectures/05-classification/05-classification-loss-metrics.md)
+- [6. Modern Neural Networks](lectures/06-modern-nns/06-modern-nns.md)
 
 ---
 
